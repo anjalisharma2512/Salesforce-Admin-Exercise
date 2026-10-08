@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rule_for_phone_number</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR
+  ( 
+   ISPICKVAL( Country__c , &quot;United States&quot;) ,
+   NOT( ISBLANK( Phone ) ) ,
+   LEN( Phone )  &lt;&gt; 10  
+  )</errorConditionFormula>
+    <errorMessage>US leads must have a phone number with at least 10 characters.</errorMessage>
+</ValidationRule>
