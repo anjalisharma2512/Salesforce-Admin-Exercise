@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_lead_s_email__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    $User.Id = &quot;005RL00000aYFLG&quot;,
+    &quot;&quot;,
+    Email  
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Copy of lead&apos;s email</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
