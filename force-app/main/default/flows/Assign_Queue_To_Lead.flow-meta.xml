@@ -58,16 +58,12 @@
         <filters>
             <field>Type</field>
             <operator>EqualTo</operator>
-            <value>
-                <stringValue>Queue</stringValue>
-            </value>
+            <value>Queue</value>
         </filters>
         <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
-            <value>
-                <stringValue>Marketing Hot Leads</stringValue>
-            </value>
+            <value>Marketing Hot Leads</value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>Group</object>
@@ -83,9 +79,7 @@
         <filters>
             <field>City</field>
             <operator>EqualTo</operator>
-            <value>
-                <stringValue>Dallas</stringValue>
-            </value>
+            <value>Dallas</value>
         </filters>
         <object>Lead</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
