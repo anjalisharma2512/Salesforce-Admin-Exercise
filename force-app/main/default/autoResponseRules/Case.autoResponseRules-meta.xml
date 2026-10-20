@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Case Origin Response Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>anjali.sharma@thinkvibes.com</replyToEmail>
+            <senderEmail>anjali.sharma@thinkvibes.com</senderEmail>
+            <senderName>Web</senderName>
+            <template>unfiled$public/Web_Case_Confirmation</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>anjali.sharma@thinkvibes.com</replyToEmail>
+            <senderEmail>anjali.sharma@thinkvibes.com</senderEmail>
+            <senderName>Email</senderName>
+            <template>unfiled$public/Email_Case_Confirmation</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>
