@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <matchingRules>
-        <fullName>Matching_Rule_On_Lead</fullName>
-        <label>Matching Rule On Lead</label>
+        <fullName>Lead_FirstName_Email_Matching</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <label>Lead_FirstName_Email_Matching</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>FirstName</fieldName>
+            <matchingMethod>FirstName</matchingMethod>
+        </matchingRuleItems>
         <matchingRuleItems>
             <blankValueBehavior>NullNotAllowed</blankValueBehavior>
             <fieldName>Email</fieldName>
